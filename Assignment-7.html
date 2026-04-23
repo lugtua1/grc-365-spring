@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+<style>
+	@font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+		} h1 {
+        text-align: center;
+        font-weight: normal;
+		color: darkred;
+    } form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background: pink;
+        margin: 36px auto;
+        border: 1px solid darkred;
+        box-shadow: 2px 3px 6px gray;
+        border-radius: 18px;
+        font: 14pt/1.2em Candara;
+    } fieldset {
+        margin-top: 18px;
+		border: 2px solid darkred;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+	} input[type="text"] {
+		width: 98%;
+		font: 14pt/1.4em Candara;
+		margin-top: 6px;
+	} input[type="submit"] {
+		width: 100px;
+		height: 40px;
+		background: darkred;
+		margin: 6px auto;
+		display: block;
+		border-radius: 6px;
+		border: 1px solid dimgray;
+		font: 14pt/1.4em Candara;
+		color: white;
+	}
+	
+	</style>
+</head>
+
+<body>
+	 <form action="https://formsubmit.co/lugtua1@unlv.nevada.edu" method="post">
+    <h1>Karaoke Sign Up</h1>
+		<input type="text" /><br/>
+		<label>First Name</label><br/>
+		<input type="text"/><br/>
+		<label>Last Name</label><br/>
+		<fieldset>
+			<legend>What Is Your Performance Vibe?</legend>
+		<input type="radio"> 
+		<label>Main Character Energy</label><br/>
+		<input type="radio"> 
+		<label>Shy, but Still Trying</label><br/>
+		<input type="radio"> 
+		<label>Joke Performance (Don't Judge)</label><br/>
+		<input type="radio"> 
+		<label>Living My Pop Star Dream</label><br/>
+		</fieldset>
+		 <fieldset>
+			<legend>What Genres Do You Prefer?</legend>
+			<input type="checkbox" onClick="toggle(this)">
+			<label>Check/Uncheck all boxes</label><br/>
+			<input type="checkbox" name="foo">
+			<label>Pop</label><br/>
+			<input type="checkbox" name="foo">
+			<label>Rock</label><br/>
+			<input type="checkbox" name="foo">
+			<label>Oldies</label><br/>
+			<input type="checkbox" name="foo">
+			 <label>Musical Theater</label><br/>
+			<input type="checkbox" name="foo">
+			 <label>Rap</label><br/>
+			<input type="checkbox" name="foo">
+			<label>Other</label><br/>
+		</fieldset>
+		<fieldset>
+		<legend>Difficulty Level</legend>
+			<select>
+				<option>Select One</option>
+				<option>Easy (Beginner/Warm Up)</option>
+				<option>Medium (Vocal Range)</option>
+				<option>Hard (High Notes Incoming)</option>
+				<option>Surprise Me</option>
+			</select>
+		 </fieldset>
+		 <fieldset>
+		<label>Song Choice + Any Special Requests?</label>
+			<textarea rows="5" cols="72">
+			</textarea>
+			<input type="submit" />
+		</fieldset>
+    </form>
+</body>
+</html>
