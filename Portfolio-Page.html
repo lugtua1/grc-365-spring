@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio Gallery</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<style>
+	body{
+		background: #f4efe7;
+	} #page{
+		width: 1024px;
+		max-width: 95%;
+		height: auto;
+		background: #fffaf5;
+		border: 1px solid #c8b8a8;
+		box-shadow: 2px 3px 6px #cbb9ad;
+		margin: 0 auto;
+	}  #banner{
+		width:100%;
+	}   h1 {
+		text-align: center;
+		font-family: 'Bubblegum Sans';
+		font-size: 60pt;
+		font: 60pt/1.4em 'Bubblegum Sans', script;
+		color: #6f4e37;
+		text-shadow: 2px 3px 6px #d9a5a0;
+	} p {
+		font: 14pt/1.4em Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+		width: 80%;
+		max-width: 800px;
+		letter-spacing: 1px;
+		margin: 12px auto;
+		color: #6d5b4d;
+	}  #textbox {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+		background: #f3e3d3;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+		padding: 24px;
+		box-sizing:border-box;
+    } figure {
+        margin: 10px;
+    } #textbox img, .zoom {
+        width: 100%;
+        height: 250px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+    } figcaption {
+        font: 12pt/1.4em Candara;
+        margin-top: 3px;
+    } .zoom {
+        background: url("thumb-tulip.jpg");
+        background-size: 100%;
+        background-position: center;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+	} .paintbrush{
+		width:120px;
+		height: auto;
+		position: relative;
+        left: 100px;
+		bottom:0;
+		animation-name: rise;
+		animation-duration: 6s;
+		animation-fill-mode: forwards;
+	} @keyframes rise {
+		0% {bottom: 0; left: 100px;}
+		50% {bottom:1000px; left: 100px;}
+		100% {left:750px; bottom: 1000px;}
+	} button {
+		background: #c98b98;
+		color: white;
+		font-family: 'Bubblegum Sans';
+		font-size: 18pt;
+		padding: 10px 24px;
+		border-radius: 12px;
+		border: none;
+		box-shadow: 2px 3px 6px #cbb9ad;
+		display: block;
+		margin: 40px auto;
+		cursor: pointer;
+		transition: 0.3s ease;
+	} @media only screen and (max-width:750px) {
+		#page {
+			width: 95%;
+			height: auto;
+			margin: 20px auto;
+		} h1 {
+			font-size: 36pt;
+		} p {
+			width: 90%;
+			font-size: 12pt;
+		} .text-img {
+			width:100%;
+			float: none;
+			margin: 0 0 30px 0;
+		} button {
+			width: 80%;
+			font-size: 16pt;
+		}#textbox {
+        grid-template-columns: repeat(1, 1fr);
+	} 
+	</style>
+
+</head>
+
+<body>
+	<div id="page">
+		<img id="banner" src="header twitter.webp"/>
+		<h1>My Portfolio</h1>
+	<div id="textbox">
+		 <figure>
+			<a href= "image1.jpg">
+            <img src="image1_thumbnail.jpg" />
+			</a>
+            <figcaption>
+           Character Art by Andrea Lugtu
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href= "image2.jpg">
+            <img src="image2_thumbnail.jpg" />
+			</a>
+            <figcaption>
+           Character Art by Andrea Lugtu
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href= "image0 (2).jpeg">
+            <img src="image0 (2)_thumbnail.jpg" />
+			</a>
+            <figcaption>
+           Character Art by Andrea Lugtu
+            </figcaption>
+        </figure>
+		<figure>
+			<a href= "image1.jpg">
+            <img src="image1_thumbnail.jpg" />
+			</a>
+            <figcaption>
+           Character Art by Andrea Lugtu
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href= "image2.jpg">
+            <img src="image2_thumbnail.jpg" />
+			</a>
+            <figcaption>
+           Character Art by Andrea Lugtu
+            </figcaption>
+        </figure>
+		 <figure>
+			<a href= "image0 (2).jpeg">
+            <img src="image0 (2)_thumbnail.jpg" />
+			</a>
+            <figcaption>
+           Character Art by Andrea Lugtu
+            </figcaption>
+        </figure>
+		</div>
+		<div id="button">
+		<button onClick="window.location.href='https://lugtua1.github.io/grc-365-spring/Assignment-7.html';">Submit a Commission</button>
+	</div>
+		<img class="paintbrush" src="paintbrush.png" />
+	</div>
+	
+</body>
+</html>
